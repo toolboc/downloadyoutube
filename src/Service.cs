@@ -102,7 +102,7 @@ namespace downloadyoutube
                 if (url.ToLower().IndexOf("http") == 0)
                 { // validate URL
 
-                    videoURL[itag] = url + "&title=" + videoTitle;
+                    videoURL[itag] = url; //+ "&title=" + videoTitle;
                 }
             }
             #endregion
