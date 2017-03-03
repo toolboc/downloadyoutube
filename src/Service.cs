@@ -29,7 +29,7 @@ namespace downloadyoutube
             if (scriptURL.IndexOf("/") == 0)
             {
                 var protocol = FindMatch(youtubeURL, "(https*:)");
-                scriptURL = protocol + scriptURL;
+                scriptURL = protocol + "//youtube.com" + scriptURL;
             }
 
             var decodeArray = await FetchSignatureScript(scriptURL);
